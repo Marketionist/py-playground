@@ -87,3 +87,20 @@ user.clear()
 print(user)
 
 print('Hello' == "Hello")
+
+# Ranges - range(start, stop, step)
+for digit in range(5):
+    print(digit)
+
+# Lambda functions - lambda arguments: expression
+# Filter odd numbers with lambda
+numbers_list1 = [5, 9, 7, 14, 97, 54, 22, 77, 83, 79, 68]
+ 
+odd_numbers_list = list(filter(lambda x: (x % 2 != 0), numbers_list1))
+print(f'odd_numbers_list: {odd_numbers_list}')
+
+# Map to double each number in the list
+numbers_list2 = [5, 9, 7, 14, 97, 54, 22, 77, 83, 79, 68]
+ 
+doubled_numbers_list = list(map(lambda x: x * 2, numbers_list2))
+print(f'doubled_numbers_list: {doubled_numbers_list}')
