@@ -104,3 +104,21 @@ numbers_list2 = [5, 9, 7, 14, 97, 54, 22, 77, 83, 79, 68]
  
 doubled_numbers_list = list(map(lambda x: x * 2, numbers_list2))
 print(f'doubled_numbers_list: {doubled_numbers_list}')
+
+# Types - print(type(x))
+# Text type:      str
+# Numeric types:  int, float, complex
+# Sequence types: list, tuple, range
+# Mapping type:   dict
+# Set types:      set, frozenset
+# Boolean type:   bool
+# Binary types:   bytes, bytearray, memoryview
+
+# Vector = list[float]
+# Stock = dict[str, bool]
+
+def full_name(first: str, name_number: int, last: str, display: bool = True) -> str:
+    if display:
+        return f'{first.capitalize()} {name_number} {last.capitalize()}'
+
+print(full_name('winston', 4, 'gatling'))
